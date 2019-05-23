@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Карта Шенкурска</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=86d47284-0fe4-45f0-9ee3-b9f22904cf6b"
+      type="text/javascript"
+    ></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <style>
+      html,
+      body,
+      #map {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .legend {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        width: 300px;
+      }
+
+      .legend .item {
+        display: flex;
+        align-items: center;
+      }
+
+      .legend .label {
+        margin-left: 5px;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .icon.icon-museum {
+        background-image: url(images/museum.png);
+      }
+
+      .icon.icon-church {
+        background-image: url(images/church.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="legend">
+      <div class="item">
+        <div class="icon icon-museum"></div>
+        <div class="label">Музей</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-church"></div>
+        <div class="label">Церковь</div>
+      </div>
+    </div>
+  </body>
+</html>
