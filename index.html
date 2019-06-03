@@ -21,6 +21,11 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
+      .header {
+        padding: 20px;
+        font-size: 20px;
+      }
+
       .legend {
         position: fixed;
         bottom: 10px;
@@ -50,24 +55,41 @@
       }
 
       .icon.icon-museum {
-        background-image: url(images/museum.png);
+        background-image: url(images/icons/museum.png);
       }
 
       .icon.icon-church {
-        background-image: url(images/church.png);
+        background-image: url(images/icons/church.png);
+      }
+
+      .icon.icon-monument {
+        background-image: url(images/icons/monument.png);
+      }
+
+      .icon.icon-building {
+        background-image: url(images/icons/building.png);
       }
     </style>
   </head>
   <body>
+    <div class="header">Культурные ресурсы г. Шенкурска</div>
     <div id="map"></div>
     <div class="legend">
       <div class="item">
         <div class="icon icon-museum"></div>
-        <div class="label">Музей</div>
+        <div class="label">Музеи</div>
       </div>
       <div class="item">
         <div class="icon icon-church"></div>
-        <div class="label">Церковь</div>
+        <div class="label">Церкви</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-monument"></div>
+        <div class="label">Памятники</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-building"></div>
+        <div class="label">Различные здания и постройки</div>
       </div>
     </div>
   </body>
