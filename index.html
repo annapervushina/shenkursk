@@ -21,9 +21,17 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
+      p {
+        margin: 0;
+      }
+
       .header {
         padding: 20px;
         font-size: 20px;
+      }
+
+      .label {
+        margin-bottom: 10px;
       }
 
       .legend {
@@ -37,6 +45,11 @@
         width: 300px;
       }
 
+      .legend .description {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
       .legend .item {
         display: flex;
         align-items: center;
@@ -45,6 +58,7 @@
 
       .legend .label {
         margin-left: 5px;
+        margin-bottom: 0;
       }
 
       .icon {
@@ -69,12 +83,44 @@
       .icon.icon-building {
         background-image: url(images/icons/building.png);
       }
+
+      .icon.icon-hotel {
+        background-image: url(images/icons/hotel.png);
+      }
+
+      .icon.icon-hospital {
+        background-image: url(images/icons/hospital.png);
+      }
+
+      .icon.icon-pharmacy {
+        background-image: url(images/icons/pharmacy.png);
+      }
+
+      .icon.icon-postoffice {
+        background-image: url(images/icons/postoffice.png);
+      }
+
+      .icon.icon-policeoffice {
+        background-image: url(images/icons/police.png);
+      }
+
+      .icon.icon-market {
+        background-image: url(images/icons/market.png);
+      }
+
+      .icon.icon-atm {
+        background-image: url(images/icons/bank.png);
+      }
     </style>
   </head>
   <body>
     <div class="header">Карта г. Шенкурска</div>
     <div id="map"></div>
     <div class="legend">
+      <div class="description">
+        Шенкурск - небольшой город в Архангельской области, расположенный на берегу реки Ваги.
+        Первый раз поселение упоминается в уставной грамоте в 1137 году.
+      </div>
       <div class="item">
         <div class="icon icon-museum"></div>
         <div class="label">Музеи</div>
@@ -89,7 +135,35 @@
       </div>
       <div class="item">
         <div class="icon icon-building"></div>
-        <div class="label">Различные здания и постройки</div>
+        <div class="label">Административные объекты</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-hotel"></div>
+        <div class="label">Гостиницы</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-hospital"></div>
+        <div class="label">Больницы</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-pharmacy"></div>
+        <div class="label">Аптеки</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-postoffice"></div>
+        <div class="label">Почта</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-policeoffice"></div>
+        <div class="label">Полиция</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-market"></div>
+        <div class="label">Магазины</div>
+      </div>
+      <div class="item">
+        <div class="icon icon-atm"></div>
+        <div class="label">Банкомат</div>
       </div>
     </div>
   </body>

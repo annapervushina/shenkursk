@@ -24,22 +24,17 @@ function init() {
         Здание музея является городской усадьбой купца Логунова и занесено в реестр памятников истории и культуры регионального значения.
       </div>
     `,
-    // balloonContentFooter: `
-    //   Информация предоставлена:
-    //   <br/>
-    //   OOO "Рога и копыта"
-    // `,
     hintContent: 'Шенкурский районный Краеведческий музей'
   }, {
     iconLayout: "default#image",
-    iconImageHref: "images/museum.png",
+    iconImageHref: "images/icons/museum.png",
     iconImageSize: [30, 30],
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(museum1);
 
   // Красные казармы
-  var building1 = new ymaps.Placemark([62.109349, 42.900644], { // 62.109371, 42.900699
+  var building1 = new ymaps.Placemark([62.109349, 42.900644], {
     balloonContentHeader: `
       <div>Красные казармы</div>
     `,
@@ -283,6 +278,11 @@ function init() {
       <img src="images/pictures/dvorec_kultury.jpg" width="300">
       <br />
       <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78002009002">+7 (800) 200-90-02</a></p>
+      </div>
+      <br />
+      <div>
         Муниципальное бюджетное учреждение культуры "Дворец культуры и спорта
         <br />
         Учреждение осуществляет следующие основные виды деятельности согласно перечню услуг и работ:
@@ -299,4 +299,385 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(building5);
+
+  // кафе Визит
+  var coffee1 = new ymaps.Placemark([62.103655, 42.903251], {
+    balloonContentHeader: `
+      <div>Кафе "Визит"</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+7818514111">+7 (81851) 4-11-1</a></p>
+      </div>
+    `,
+    hintContent: 'Кафе "Визит"'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/coffee.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(coffee1);
+
+  // кафе Шенкурский посад
+  var coffee2 = new ymaps.Placemark([62.109687, 42.899633], {
+    balloonContentHeader: `
+      <div>Кафе "Шенкурский посад"</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+7818514140">+7 (81851) 4-14-0</a></p>
+      </div>
+    `,
+    hintContent: 'Кафе "Шенкурский посад"'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/coffee.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(coffee2);
+
+  // гостиница Вага
+  var hotel1 = new ymaps.Placemark([62.107406, 42.904391], {
+    balloonContentHeader: `
+      <div>Гостиница "Вага"</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+7818514005">+7 (81851) 4-00-5</a></p>
+      </div>
+    `,
+    hintContent: 'Гостиница "Вага"'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/hotel.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(hotel1);
+
+  // Шенкурская центральная районная больница
+  var hospital1 = new ymaps.Placemark([62.109065, 42.904764], {
+    balloonContentHeader: `
+      <div>ГБУЗ Архангельской области Шенкурская центральная районная больница им. Н. Н. Приорова</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141470">+7 (81851) 4-14-70</a></p>
+        <p><a href="tel:+78185140162">+7 (81851) 4-01-62</a></p>
+      </div>
+    `,
+    hintContent: 'ГБУЗ Архангельской области Шенкурская центральная районная больница им. Н. Н. Приорова'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/hospital.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(hospital1);
+
+  // Терапевтическое отделение
+  var hospital2 = new ymaps.Placemark([62.109653, 42.903634], {
+    balloonContentHeader: `
+      <div>Терапевтическое отделение</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141402">+7 (81851) 4-14-02</a></p>
+      </div>
+    `,
+    hintContent: 'Терапевтическое отделение'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/hospital.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(hospital2);
+
+  // Детское отделение
+  var hospital3 = new ymaps.Placemark([62.110324, 42.904020], {
+    balloonContentHeader: `
+      <div>Детское отделение</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141378">+7 (81851) 4-13-78</a></p>
+      </div>
+    `,
+    hintContent: 'Детское отделение'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/hospital.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(hospital3);
+
+  // Добрая аптека
+  var pharmacy1 = new ymaps.Placemark([62.103169, 42.902470], {
+    balloonContentHeader: `
+      <div>Добрая аптека</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185140065">+7 (81851) 4-00-65</a></p>
+      </div>
+    `,
+    hintContent: 'Добрая аптека'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/pharmacy.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(pharmacy1);
+
+  // Фармомед
+  var pharmacy2 = new ymaps.Placemark([62.108983, 42.904576], {
+    balloonContentHeader: `
+      <div>Фармомед</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141591">+7 (81851) 4-15-91</a></p>
+      </div>
+    `,
+    hintContent: 'Фармомед'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/pharmacy.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(pharmacy2);
+
+  // Фармомед
+  var pharmacy3 = new ymaps.Placemark([62.102666, 42.900247], {
+    balloonContentHeader: `
+      <div>Фармомед</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141591">+7 (81851) 4-15-91</a></p>
+      </div>
+    `,
+    hintContent: 'Фармомед'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/pharmacy.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(pharmacy3);
+
+  // Фармация
+  var pharmacy4 = new ymaps.Placemark([62.107073, 42.902755], {
+    balloonContentHeader: `
+      <div>Фармация</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141139">+7 (81851) 4-11-39</a></p>
+        <p><a href="tel:+78185141307">+7 (81851) 4-13-07</a></p>
+      </div>
+    `,
+    hintContent: 'Фармация'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/pharmacy.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(pharmacy4);
+
+  // Аюта
+  var pharmacy5 = new ymaps.Placemark([62.105069, 42.902163], {
+    balloonContentHeader: `
+      <div>Аюта</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Аюта'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/pharmacy.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(pharmacy5);
+
+  // Почта
+  var postoffice1 = new ymaps.Placemark([62.106376, 42.901585], {
+    balloonContentHeader: `
+      <div>Почта</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141139">+7 (81851) 4-14-00</a></p>
+        <p><a href="tel:+78001000000">+7 (800) 100-00-00</a></p>
+        <p><a href="tel:+78002005888">+7 (800) 200-58-88</a></p>
+      </div>
+    `,
+    hintContent: 'Почта'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/postoffice.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(postoffice1);
+
+  // Полиция
+  var policeoffice1 = new ymaps.Placemark([62.107768, 42.899272], {
+    balloonContentHeader: `
+      <div>ГУВМ МВД</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78185141139">+7 (81851) 4-15-40</a></p>
+      </div>
+    `,
+    hintContent: 'ГУВМ МВД'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/police.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(policeoffice1);
+
+  // Полиция
+  var bank1 = new ymaps.Placemark([62.104596, 42.902917], {
+    balloonContentHeader: `
+      <div>Банкомат Сбербанк</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Банкомат Сбербанк'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/bank.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(bank1);
+
+  // Магазин продуктов
+  var market1 = new ymaps.Placemark([62.105759, 42.903807], {
+    balloonContentHeader: `
+      <div>Магазин продуктов</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Магазин продуктов'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market1);
+
+  // Русалка
+  var market2 = new ymaps.Placemark([62.103736, 42.903114], {
+    balloonContentHeader: `
+      <div>Русалка</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Русалка'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market2);
+
+  // Магнит
+  var market3 = new ymaps.Placemark([62.105117, 42.902176], {
+    balloonContentHeader: `
+      <div>Магнит</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78002009002">+7 (800) 200-90-02</a></p>
+      </div>
+    `,
+    hintContent: 'Магнит'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market3);
+
+  // Продуктовый рынок
+  var market4 = new ymaps.Placemark([62.103320, 42.903792], {
+    balloonContentHeader: `
+      <div>Продуктовый рынок</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Продуктовый рынок'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market4);
+
+  // На Сретенской
+  var market5 = new ymaps.Placemark([62.107765, 42.892408], {
+    balloonContentHeader: `
+      <div>На Сретенской</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'На Сретенской'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market5);
 }
+
+// кафе визит 62.103655, 42.903251
+// кафе шенкурский посад 62.109687, 42.899633
+// гостиница Вага 62.107406, 42.904391
+// центральная районная больница 62.108492, 42.904184
+// Терапевтическое отделение 62.109653, 42.903634
+// детское отделение 62.110324, 42.904020
+// добрая аптека 62.103169, 42.902470
+// фармомед 62.108983, 42.904576
+// фармомед 62.102666, 42.900247
+// фармация 62.107073, 42.902755
+// аюта 62.105069, 42.902163
+// почта 62.106376, 42.901585
+// сбербанк 62.104596, 42.902917
+// ГУВМ МВД 62.107768, 42.899272
+
+// магазин продуктов 62.105759, 42.903807
+// русалка 62.103736, 42.903114
+// магнит 62.105117, 42.902176
+// продуктовый рынок 62.103320, 42.903792
+// на сретенской 62.107765, 42.892408
