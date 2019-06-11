@@ -340,10 +340,10 @@ function init() {
   });
   map.geoObjects.add(coffee2);
 
-  // гостиница Вага
+  // гостевой дом Вага
   var hotel1 = new ymaps.Placemark([62.107406, 42.904391], {
     balloonContentHeader: `
-      <div>Гостиница "Вага"</div>
+      <div>Гостевой дом "Вага"</div>
     `,
     balloonContentBody: `
       <div>
@@ -351,7 +351,7 @@ function init() {
         <p><a href="tel:+7818514005">+7 (81851) 4-00-5</a></p>
       </div>
     `,
-    hintContent: 'Гостиница "Вага"'
+    hintContent: 'Гостевой дом "Вага"'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/hotel.png",
@@ -595,11 +595,11 @@ function init() {
   // Русалка
   var market2 = new ymaps.Placemark([62.103736, 42.903114], {
     balloonContentHeader: `
-      <div>Русалка</div>
+      <div>Магазин "Русалка"</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Русалка'
+    hintContent: 'Магазин "Русалка"'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -611,7 +611,7 @@ function init() {
   // Магнит
   var market3 = new ymaps.Placemark([62.105117, 42.902176], {
     balloonContentHeader: `
-      <div>Магнит</div>
+      <div>Магазин "Магнит"</div>
     `,
     balloonContentBody: `
       <div>
@@ -619,7 +619,7 @@ function init() {
         <p><a href="tel:+78002009002">+7 (800) 200-90-02</a></p>
       </div>
     `,
-    hintContent: 'Магнит'
+    hintContent: 'Магазин "Магнит"'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -647,11 +647,11 @@ function init() {
   // На Сретенской
   var market5 = new ymaps.Placemark([62.107765, 42.892408], {
     balloonContentHeader: `
-      <div>На Сретенской</div>
+      <div>Магазин "На Сретенской"</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'На Сретенской'
+    hintContent: 'Магазин "На Сретенской"'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
