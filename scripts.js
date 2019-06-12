@@ -742,4 +742,19 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(gift1);
+
+  // Сквер
+  var label1 = new ymaps.Placemark([62.106696, 42.899165], {
+    iconContent: '',
+    iconCaption: 'Сквер'
+  }, {
+  });
+  map.geoObjects.add(label1);
+
+  // Переправа
+  var label2 = new ymaps.Placemark([62.109689, 42.880050], {
+    iconCaption: 'Переправа'
+  }, {
+  });
+  map.geoObjects.add(label2);
 }
