@@ -3,10 +3,11 @@ ymaps.ready(init);
 function init() {
   var map = new ymaps.Map("map", {
     center: [62.10565, 42.885612],
-    zoom: 15,
+    zoom: 14,
     controls: []
   }, {
     yandexMapDisablePoiInteractivity: true,
+    restrictMapArea: true,
     suppressMapOpenBlock: true,
   });
 
@@ -576,6 +577,26 @@ function init() {
   });
   map.geoObjects.add(bank1);
 
+  // Банкомат Россельхозбанк
+  var bank2 = new ymaps.Placemark([62.102022, 42.902229], {
+    balloonContentHeader: `
+      <div>Банкомат Россельхозбанк</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Телефоны:</label>
+        <p><a href="tel:+78002000290">+7 (800) 200-02-90</a></p>
+      </div>
+    `,
+    hintContent: 'Банкомат Россельхозбанк'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/bank.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(bank2);
+
   // Магазин продуктов
   var market1 = new ymaps.Placemark([62.105759, 42.903807], {
     balloonContentHeader: `
@@ -701,4 +722,24 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(bus2);
+
+  // Сувенирная лавка 1
+  var gift1 = new ymaps.Placemark([62.104422, 42.901655], {
+    balloonContentHeader: `
+      <div>Сувенирная лавка "ПОСАДСКИЕ РЕМЁСЛА"</div>
+    `,
+    balloonContentBody: `
+      <div>
+        <label class="label">Вебсайт:</label>
+        <p><a href="https://vk.com/lavkashenkurskaya">https://vk.com/lavkashenkurskaya</a></p>
+      </div>
+    `,
+    hintContent: 'Сувенирная лавка "ПОСАДСКИЕ РЕМЁСЛА"'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/gift.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(gift1);
 }
