@@ -673,4 +673,32 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(beach1);
+
+  // Автобусная остановка 1
+  var bus1 = new ymaps.Placemark([62.107221, 42.897902], {
+    balloonContentHeader: `
+      <div>Автобусная остановка</div>
+    `,
+    hintContent: 'Автобусная остановка'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/bus.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(bus1);
+
+  // Автобусная остановка 2
+  var bus2 = new ymaps.Placemark([62.100717, 42.885724], {
+    balloonContentHeader: `
+      <div>Автобусная остановка</div>
+    `,
+    hintContent: 'Автобусная остановка'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/bus.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(bus2);
 }
