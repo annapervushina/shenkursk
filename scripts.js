@@ -11,10 +11,10 @@ function init() {
     suppressMapOpenBlock: true,
   });
 
-  // Шенкурский районный Краеведческий музей
+  // Шенкурский районный краеведческий музей
   var museum1 = new ymaps.Placemark([62.103139, 42.900937], {
     balloonContentHeader: `
-      <div>Шенкурский районный Краеведческий музей</div>
+      <div>Шенкурский районный краеведческий музей</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/shenkursk_museum.jpg" width="300">
@@ -34,26 +34,21 @@ function init() {
   });
   map.geoObjects.add(museum1);
 
-  // Красные казармы
+  // Терапевтическое отделение Шенкурской ЦРБ (бывшие воинские казармы)
   var building1 = new ymaps.Placemark([62.109349, 42.900644], {
     balloonContentHeader: `
-      <div>Красные казармы</div>
+      <div>Терапевтическое отделение Шенкурской ЦРБ (бывшие воинские казармы)</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/krasnye_kazarmy.jpg" width="300">
       <br/>
       <div class="description">
-        Воинские казармы для полицейских стражников.
+        Бывшие воинские казармы для полицейских стражников.
         <br />
         Во время восстания крестьян, протестовавших против решения губернского военкомата о мобилизации в Красную армию, в здании военкомата держали оборону члены уездного исполкома, служащие военкомата, красноармейцы. Им противостояло около тысячи бывших солдат и офицеров под руководством М.Н. Ракитина. После 4-дневной осады осажденные были арестованы. 30 июля 1918 г. восставшие отошли от города. С этого времени здание стали называть «Красные казармы»
       </div>
     `,
-    // balloonContentFooter: `
-    //   Информация предоставлена:
-    //   <br/>
-    //   OOO "Рога и копыта"
-    // `,
-    hintContent: 'Красные казармы'
+    hintContent: 'Терапевтическое отделение Шенкурской ЦРБ (бывшие воинские казармы)'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/building.png",
@@ -90,10 +85,10 @@ function init() {
   });
   map.geoObjects.add(monument1);
 
-  // Церковь Зосимы и Савватия Соловецких 
+  // Церковь Зосимы, Савватия и Германа бывшего Свято-Троицкого монастыря
   var church2 = new ymaps.Placemark([62.103452, 42.905281], {
     balloonContentHeader: `
-      <div>Церковь Зосимы и Савватия Соловецких</div>
+      <div>Церковь Зосимы, Савватия и Германа бывшего Свято-Троицкого монастыря</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/tcerkov_zosimy.jpg" width="300">
@@ -116,10 +111,10 @@ function init() {
   });
   map.geoObjects.add(church2);
 
-  // Свято-Троицкий женский монастырь
+  // Троицкий собор бывшего Свято-Троицкого монастыря
   var church1 = new ymaps.Placemark([62.103930, 42.904100], {
     balloonContentHeader: `
-      <div>Свято-Троицкий женский монастырь</div>
+      <div>Троицкий собор бывшего Свято-Троицкого монастыря</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/zhensky_monastyr.jpg" width="300">
@@ -133,7 +128,7 @@ function init() {
     //   <br/>
     //   OOO "Рога и копыта"
     // `,
-    hintContent: 'Свято-Троицкий женский монастырь'
+    hintContent: 'Троицкий собор бывшего Свято-Троицкого монастыря'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/church.png",
@@ -145,18 +140,19 @@ function init() {
   // Дом командира Красной армии И.И. Раудметса
   var building2 = new ymaps.Placemark([62.108479, 42.897450], {
     balloonContentHeader: `
-      <div>Дом командира Красной армии И.И. Раудметса</div>
+      <div>Архив (бывший дом воинского начальника)</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/dom_raudmetsa.jpg" width="300">
       <br/>
       <div class="description">
+        В годы гражданской войны – общежитие членов уездисполкома. Одним из командиров был Иван Раудметс. 
         Иван Раудметс родился 1 января 1892 года. По национальности эстонец. Был призван на службу в царскую армию. В 1915 году окончил военное училище. Принимал участие в Первой мировой войне, имел звание капитана. В марте 1918 года Раудметс добровольно пошёл на службу в Рабоче-крестьянскую Красную Армию. Командовал батальоном 4-й Петроградской стрелковой дивизии, позднее также командовал 156-м, 157-м стрелковыми полками, затем руководил Шенкурским районом. 11 июня 1937 года комдив Раудметс был арестован органами НКВД СССР. 
         <br />
         9 сентября 1937 года Военная коллегия Верховного Суда СССР признала его виновным и приговорила к высшей мере наказания — смертной казни. Приговор был приведён в исполнение в тот же день. Решением Военной коллегии Верховного Суда СССР от 4 августа 1966 года Иван Иванович Раудметс был посмертно реабилитирован.
       </div>
     `,
-    hintContent: 'Дом командира Красной армии И.И. Раудметса'
+    hintContent: 'Архив (бывший дом воинского начальника)'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/building.png",
@@ -188,10 +184,10 @@ function init() {
   // });
   // map.geoObjects.add(building3);
 
-  // Тюремный корпус с церквью Петра и Павла
+  // Тюремная Церковь Петра и Павла
   var building3 = new ymaps.Placemark([62.108613, 42.903434], {
     balloonContentHeader: `
-      <div>Тюремный корпус с церквью Петра и Павла</div>
+      <div>Тюремная Церковь Петра и Павла</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/petra_i_pavla.jpg" width="300">
@@ -202,7 +198,7 @@ function init() {
         В 1930 годы тюрьма была упраздненена, с ней закрылась и церковь. В тюремных зданиях и церкви до 1990 годов размещалась больница, а после ее закрытия храм и корпус пришли в запустение. Здание церкви имеет статус памятника архитектуры регионального значения, в городской администрации и местной церковной общине рассматривают возможность реставрации здания храма
       </div>
     `,
-    hintContent: 'Тюремный корпус с церквью Петра и Павла'
+    hintContent: 'Тюремная Церковь Петра и Павла'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/church.png",
@@ -253,15 +249,37 @@ function init() {
   });
   map.geoObjects.add(monument3);
 
-  // МБУК «Шенкурская централизованная библиотечная система» (Бывший Народный дом)
+  // Мемориал воинам, погибшим в локальных войнах и военных конфликтах в конце 20-го — начале 21 века
+  var monument4 = new ymaps.Placemark([62.107106, 42.897935], {
+    balloonContentHeader: `
+      <div>Мемориал воинам, погибшим в локальных войнах и военных конфликтах в конце 20-го — начале 21 века</div>
+    `,
+    balloonContentBody: `
+      <img src="images/pictures/goryachie_tochki.jpg" width="300">
+      <br/>
+      <div class="description">
+      Памятник погибшим в постсоветских «горячих точках».
+      Возведенный за год монумент считается поистине народным: денежные средства на его строительство собирали всем районом, помогли благотворители и местная администрация.   Открытие памятника — историческое и важное событие для всего района. Это один из первых шагов с тем, чтобы увековечить память о  земляках, погибших в боях.      
+      </div>
+    `,
+    hintContent: 'Мемориал воинам, погибшим в локальных войнах и военных конфликтах в конце 20-го — начале 21 века'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/monument.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(monument4);
+
+  // Межпоселенческая библиотека им. Е. Овсянкина
   var building4 = new ymaps.Placemark([62.102809, 42.901674], {
     balloonContentHeader: `
-      <div>МБУК «Шенкурская централизованная библиотечная система» (Бывший Народный дом)</div>
+      <div>Межпоселенческая библиотека им. Е. Овсянкина</div>
     `,
     balloonContentBody: `
       <img src="images/pictures/narodny_dom.jpg" width="300">
     `,
-    hintContent: 'МБУК «Шенкурская централизованная библиотечная система» (Бывший Народный дом)'
+    hintContent: 'Межпоселенческая библиотека им. Е. Овсянкина'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/building.png",
@@ -342,7 +360,7 @@ function init() {
   map.geoObjects.add(coffee2);
 
   // гостевой дом Вага
-  var hotel1 = new ymaps.Placemark([62.107406, 42.904391], {
+  var hotel1 = new ymaps.Placemark([62.107424, 42.904432], { // 62.107406, 42.904391], {
     balloonContentHeader: `
       <div>Гостевой дом "Вага"</div>
     `,
@@ -425,7 +443,7 @@ function init() {
   // Добрая аптека
   var pharmacy1 = new ymaps.Placemark([62.103169, 42.902470], {
     balloonContentHeader: `
-      <div>Добрая аптека</div>
+      <div>Аптека</div>
     `,
     balloonContentBody: `
       <div>
@@ -433,7 +451,7 @@ function init() {
         <p><a href="tel:+78185140065">+7 (81851) 4-00-65</a></p>
       </div>
     `,
-    hintContent: 'Добрая аптека'
+    hintContent: 'Аптека'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/pharmacy.png",
@@ -445,7 +463,7 @@ function init() {
   // Фармомед
   var pharmacy2 = new ymaps.Placemark([62.108983, 42.904576], {
     balloonContentHeader: `
-      <div>Фармомед</div>
+      <div>Аптека</div>
     `,
     balloonContentBody: `
       <div>
@@ -453,7 +471,7 @@ function init() {
         <p><a href="tel:+78185141591">+7 (81851) 4-15-91</a></p>
       </div>
     `,
-    hintContent: 'Фармомед'
+    hintContent: 'Аптека'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/pharmacy.png",
@@ -465,7 +483,7 @@ function init() {
   // Фармомед
   var pharmacy3 = new ymaps.Placemark([62.102666, 42.900247], {
     balloonContentHeader: `
-      <div>Фармомед</div>
+      <div>Аптека</div>
     `,
     balloonContentBody: `
       <div>
@@ -473,7 +491,7 @@ function init() {
         <p><a href="tel:+78185141591">+7 (81851) 4-15-91</a></p>
       </div>
     `,
-    hintContent: 'Фармомед'
+    hintContent: 'Аптека'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/pharmacy.png",
@@ -485,7 +503,7 @@ function init() {
   // Фармация
   var pharmacy4 = new ymaps.Placemark([62.107073, 42.902755], {
     balloonContentHeader: `
-      <div>Фармация</div>
+      <div>Аптека</div>
     `,
     balloonContentBody: `
       <div>
@@ -494,7 +512,7 @@ function init() {
         <p><a href="tel:+78185141307">+7 (81851) 4-13-07</a></p>
       </div>
     `,
-    hintContent: 'Фармация'
+    hintContent: 'Аптека'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/pharmacy.png",
@@ -506,11 +524,11 @@ function init() {
   // Аюта
   var pharmacy5 = new ymaps.Placemark([62.105069, 42.902163], {
     balloonContentHeader: `
-      <div>Аюта</div>
+      <div>Аптека</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Аюта'
+    hintContent: 'Аптека'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/pharmacy.png",
@@ -577,34 +595,14 @@ function init() {
   });
   map.geoObjects.add(bank1);
 
-  // Банкомат Россельхозбанк
-  var bank2 = new ymaps.Placemark([62.102022, 42.902229], {
-    balloonContentHeader: `
-      <div>Банкомат Россельхозбанк</div>
-    `,
-    balloonContentBody: `
-      <div>
-        <label class="label">Телефоны:</label>
-        <p><a href="tel:+78002000290">+7 (800) 200-02-90</a></p>
-      </div>
-    `,
-    hintContent: 'Банкомат Россельхозбанк'
-  }, {
-    iconLayout: "default#image",
-    iconImageHref: "images/icons/bank.png",
-    iconImageSize: [30, 30],
-    iconImageOffset: [-15, -15]
-  });
-  map.geoObjects.add(bank2);
-
   // Магазин продуктов
   var market1 = new ymaps.Placemark([62.105759, 42.903807], {
     balloonContentHeader: `
-      <div>Магазин продуктов</div>
+      <div>Продуктовый магазин</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Магазин продуктов'
+    hintContent: 'Продуктовый магазин'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -616,11 +614,11 @@ function init() {
   // Русалка
   var market2 = new ymaps.Placemark([62.103736, 42.903114], {
     balloonContentHeader: `
-      <div>Магазин "Русалка"</div>
+      <div>Продуктовый магазин</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Магазин "Русалка"'
+    hintContent: 'Продуктовый магазин'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -632,7 +630,7 @@ function init() {
   // Магнит
   var market3 = new ymaps.Placemark([62.105117, 42.902176], {
     balloonContentHeader: `
-      <div>Магазин "Магнит"</div>
+      <div>Продуктовый магазин</div>
     `,
     balloonContentBody: `
       <div>
@@ -640,7 +638,7 @@ function init() {
         <p><a href="tel:+78002009002">+7 (800) 200-90-02</a></p>
       </div>
     `,
-    hintContent: 'Магазин "Магнит"'
+    hintContent: 'Продуктовый магазин'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -668,11 +666,11 @@ function init() {
   // На Сретенской
   var market5 = new ymaps.Placemark([62.107765, 42.892408], {
     balloonContentHeader: `
-      <div>Магазин "На Сретенской"</div>
+      <div>Продуктовый магазин</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Магазин "На Сретенской"'
+    hintContent: 'Продуктовый магазин'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -680,6 +678,36 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(market5);
+
+  var market6 = new ymaps.Placemark([62.102767, 42.902025], {
+    balloonContentHeader: `
+      <div>Продуктовый магазин</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Продуктовый магазин'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market6);
+
+  var market7 = new ymaps.Placemark([62.109153, 42.895517], {
+    balloonContentHeader: `
+      <div>Продуктовый магазин</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Продуктовый магазин'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market7);
 
   // Пляж
   var beach1 = new ymaps.Placemark([62.111298, 42.872378], {
@@ -724,17 +752,17 @@ function init() {
   map.geoObjects.add(bus2);
 
   // Сувенирная лавка 1
-  var gift1 = new ymaps.Placemark([62.104422, 42.901655], {
+  var gift1 = new ymaps.Placemark([62.107275, 42.904187], {
     balloonContentHeader: `
-      <div>Сувенирная лавка "ПОСАДСКИЕ РЕМЁСЛА"</div>
+      <div>Отдел с сувенирами в гостевом доме «Вага»</div>
     `,
-    balloonContentBody: `
-      <div>
-        <label class="label">Вебсайт:</label>
-        <p><a href="https://vk.com/lavkashenkurskaya">https://vk.com/lavkashenkurskaya</a></p>
-      </div>
-    `,
-    hintContent: 'Сувенирная лавка "ПОСАДСКИЕ РЕМЁСЛА"'
+    // balloonContentBody: `
+    //   <div>
+    //     <label class="label">Вебсайт:</label>
+    //     <p><a href="https://vk.com/lavkashenkurskaya">https://vk.com/lavkashenkurskaya</a></p>
+    //   </div>
+    // `,
+    hintContent: 'Отдел с сувенирами в гостевом доме «Вага»'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/gift.png",
@@ -752,9 +780,24 @@ function init() {
   map.geoObjects.add(label1);
 
   // Переправа
-  var label2 = new ymaps.Placemark([62.109689, 42.880050], {
-    iconCaption: 'Переправа'
+  var label2 = new ymaps.Placemark([62.111836, 42.877595], {
+    iconCaption: 'Переправа (понтонный мост)'
   }, {
   });
   map.geoObjects.add(label2);
+
+  // Переправа
+  var label3 = new ymaps.Placemark([62.102006, 42.891152], {
+    iconCaption: 'Межсезонная переправа'
+  }, {
+  });
+  map.geoObjects.add(label3);
+
+  // Городской парк
+  var label4 = new ymaps.Placemark([62.106561, 42.892973], {
+    iconContent: '',
+    iconCaption: 'Городской парк'
+  }, {
+  });
+  map.geoObjects.add(label4);
 }
