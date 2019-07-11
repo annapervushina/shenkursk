@@ -19,6 +19,10 @@ function init() {
     balloonContentBody: `
       <img src="images/pictures/shenkursk_museum.jpg" width="300">
       <br/>
+      <label class="label">Телефоны:</label>
+      <p><a href="tel:+78185140324">+7 (81851) 4-03-24</a></p>
+      <label class="label">Группа Вконтакте:</label>
+      <p><a href="https://vk.com/shenkmuseum">https://vk.com/shenkmuseum</a></p>
       <div class="description">
         Один из старейших музеев Архангельской области. Сегодня в музейных фондах хранится около 18,2 тыс. экспонатов, которые разбиты по коллекциям. Среди них уникальные коллекции: «Декоративно – прикладного искусства», «Этнографическая», «Графика», «Живопись», «Оружие», «Фото» и другие. Все экспонаты воссоздают яркую картину истории края.
         <br />
@@ -271,6 +275,34 @@ function init() {
   });
   map.geoObjects.add(monument4);
 
+  // Памятник балтийским матросам
+  var monument5 = new ymaps.Placemark([62.101229, 42.898421], {
+    balloonContentHeader: `
+      <div>Памятник Балтийским матросам</div>
+    `,
+    hintContent: 'Памятник Балтийским матросам'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/monument.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(monument5);
+
+  // Памятник пограничникам
+  var monument6 = new ymaps.Placemark([62.101229, 42.898421], {
+    balloonContentHeader: `
+      <div>Памятник пограничникам</div>
+    `,
+    hintContent: 'Памятник пограничникам'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/monument.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(monument6);
+
   // Межпоселенческая библиотека им. Е. Овсянкина
   var building4 = new ymaps.Placemark([62.102809, 42.901674], {
     balloonContentHeader: `
@@ -278,6 +310,10 @@ function init() {
     `,
     balloonContentBody: `
       <img src="images/pictures/narodny_dom.jpg" width="300">
+      <label class="label">Телефоны:</label>
+      <p><a href="tel:+78185141728">+7 (81851) 4-17-28</a></p>
+      <label class="label">Группа Вконтакте:</label>
+      <p><a href="https://vk.com/public64490258">https://vk.com/public64490258</a></p>
     `,
     hintContent: 'Межпоселенческая библиотека им. Е. Овсянкина'
   }, {
@@ -298,7 +334,9 @@ function init() {
       <br />
       <div>
         <label class="label">Телефоны:</label>
-        <p><a href="tel:+78002009002">+7 (800) 200-90-02</a></p>
+        <p><a href="tel:+78185141170">+7 (81851) 4-11-70</a></p>
+        <label class="label">Группа Вконтакте:</label>
+        <p><a href="https://vk.com/dkis_shykursk">https://vk.com/dkis_shykursk</a></p>
       </div>
       <br />
       <div>
@@ -306,8 +344,10 @@ function init() {
         <br />
         Учреждение осуществляет следующие основные виды деятельности согласно перечню услуг и работ:
         <ul>
-          <li>Организация деятельности кружков, творческих коллективов, студий любительского художественного, декоративно-прикладного, изобразительного и технического творчества, культуры, музыкального искусства (вокального творчества, игры на музыкальных инструментах и др.), театрального творчества (в т.ч. актерского мастерства и др.) хореографического творчества, изобразительного искусства (декоративно-прикладного, изобразительного творчества и др.), эстетического развития здоровья и спорта культуры быта начинающей молодой семьи молодой семьи
+          <li>Организация деятельности кружков, творческих коллективов, студий любительского художественного, декоративно-прикладного, изобразительного и технического творчества, культуры, музыкального искусства (вокального творчества, игры на музыкальных инструментах и др.), театрального творчества (в т.ч. актерского мастерства и др.) хореографического творчества, изобразительного искусства (декоративно-прикладного, изобразительного творчества и др.)
           <li>Организация работы любительских объединений, групп, клубов по интересам, художественных</li>
+        </ul>
+        Имеется детская комната
       </div>
     `,
     hintContent: 'Дворец культуры и спорта'
@@ -399,26 +439,6 @@ function init() {
     iconImageOffset: [-15, -15]
   });
   map.geoObjects.add(hospital1);
-
-  // Терапевтическое отделение
-  var hospital2 = new ymaps.Placemark([62.109653, 42.903634], {
-    balloonContentHeader: `
-      <div>Терапевтическое отделение</div>
-    `,
-    balloonContentBody: `
-      <div>
-        <label class="label">Телефоны:</label>
-        <p><a href="tel:+78185141402">+7 (81851) 4-14-02</a></p>
-      </div>
-    `,
-    hintContent: 'Терапевтическое отделение'
-  }, {
-    iconLayout: "default#image",
-    iconImageHref: "images/icons/hospital.png",
-    iconImageSize: [30, 30],
-    iconImageOffset: [-15, -15]
-  });
-  map.geoObjects.add(hospital2);
 
   // Детское отделение
   var hospital3 = new ymaps.Placemark([62.110324, 42.904020], {
@@ -560,7 +580,7 @@ function init() {
   map.geoObjects.add(postoffice1);
 
   // Полиция
-  var policeoffice1 = new ymaps.Placemark([62.107768, 42.899272], {
+  var policeoffice1 = new ymaps.Placemark([62.101902, 42.899362], {
     balloonContentHeader: `
       <div>ГУВМ МВД</div>
     `,
@@ -614,11 +634,11 @@ function init() {
   // Русалка
   var market2 = new ymaps.Placemark([62.103736, 42.903114], {
     balloonContentHeader: `
-      <div>Продуктовый магазин</div>
+      <div>Промтоварный магазин</div>
     `,
     balloonContentBody: `
     `,
-    hintContent: 'Продуктовый магазин'
+    hintContent: 'Промтоварный магазин'
   }, {
     iconLayout: "default#image",
     iconImageHref: "images/icons/market.png",
@@ -696,9 +716,60 @@ function init() {
 
   var market7 = new ymaps.Placemark([62.109153, 42.895517], {
     balloonContentHeader: `
+      <div>Торговый центр</div>
+    `,
+    balloonContentBody: `
+      <ul>
+        <li>Продуктовый магазин (1 этаж)</li>
+        <li>Промтоварный магазин (2 этаж)</li>
+      </ul>
+    `,
+    hintContent: 'Торговый центр'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market7);
+
+  var market8 = new ymaps.Placemark([62.102629, 42.901978], {
+    balloonContentHeader: `
+      <div>Промтоварный магазин</div>
+    `,
+    balloonContentBody: `
+    `,
+    hintContent: 'Промтоварный магазин'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market8);
+
+  var market9 = new ymaps.Placemark([62.103458, 42.906800], {
+    balloonContentHeader: `
+      <div>Промтоварный магазин</div>
+    `,
+    balloonContentBody: `
+
+    `,
+    hintContent: 'Промтоварный магазин'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market9);
+
+  var market10 = new ymaps.Placemark([62.103476, 42.907026], {
+    balloonContentHeader: `
       <div>Продуктовый магазин</div>
     `,
     balloonContentBody: `
+
     `,
     hintContent: 'Продуктовый магазин'
   }, {
@@ -707,7 +778,23 @@ function init() {
     iconImageSize: [30, 30],
     iconImageOffset: [-15, -15]
   });
-  map.geoObjects.add(market7);
+  map.geoObjects.add(market10);
+
+  var market11 = new ymaps.Placemark([62.103507, 42.913241], {
+    balloonContentHeader: `
+      <div>Продуктовый и промтоварный магазин</div>
+    `,
+    balloonContentBody: `
+
+    `,
+    hintContent: 'Продуктовый и промтоварный магазин'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/market.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(market11);
 
   // Пляж
   var beach1 = new ymaps.Placemark([62.111298, 42.872378], {
@@ -771,6 +858,25 @@ function init() {
   });
   map.geoObjects.add(gift1);
 
+  // Сувениры в музее
+  var gift2 = new ymaps.Placemark([62.103002, 42.900750], {
+    balloonContentHeader: `
+      <div>Отдел с сувенирами в краеведческом музее</div>
+    `,
+    balloonContentBody: `
+      <div>
+        Продукцию можно приобрести на 1 этаже (при входе)
+      </div>
+    `,
+    hintContent: 'Отдел с сувенирами в краеведческом музее'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/gift.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(gift2);
+
   // Сквер
   var label1 = new ymaps.Placemark([62.106696, 42.899165], {
     iconContent: '',
@@ -800,4 +906,60 @@ function init() {
   }, {
   });
   map.geoObjects.add(label4);
+
+  // Детская площадка
+  var label5 = new ymaps.Placemark([62.110880, 42.891116], {
+    iconContent: '',
+    iconCaption: 'Детская площадка'
+  }, {
+  });
+  map.geoObjects.add(label5);
+
+  // Детская площадка
+  var label6 = new ymaps.Placemark([62.106137, 42.900976], {
+    iconContent: '',
+    iconCaption: 'Детская площадка'
+  }, {
+  });
+  map.geoObjects.add(label6);
+
+  // Детская площадка
+  var label7 = new ymaps.Placemark([62.101637, 42.898151], {
+    iconContent: '',
+    iconCaption: 'Детская площадка'
+  }, {
+  });
+  map.geoObjects.add(label7);
+
+  // Детская площадка
+  var label8 = new ymaps.Placemark([62.106585, 42.891904], {
+    iconContent: '',
+    iconCaption: 'Детская площадка'
+  }, {
+  });
+  map.geoObjects.add(label8);
+
+  // Футбольное поле
+  var label9 = new ymaps.Placemark([62.111991, 42.890028], {
+    iconContent: '',
+    iconCaption: 'Футбольное поле'
+  }, {
+  });
+  map.geoObjects.add(label9);
+
+  // Хоккейный корт
+  var label10 = new ymaps.Placemark([62.111462, 42.890804], {
+    iconContent: '',
+    iconCaption: 'Хоккейный корт'
+  }, {
+  });
+  map.geoObjects.add(label10);
+
+  // Мини-футбольное поле
+  var label11 = new ymaps.Placemark([62.111799, 42.891877], {
+    iconContent: '',
+    iconCaption: 'Мини-футбольное поле'
+  }, {
+  });
+  map.geoObjects.add(label11);
 }
