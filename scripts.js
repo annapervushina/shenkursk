@@ -142,7 +142,7 @@ function init() {
   map.geoObjects.add(church1);
 
   // Дом командира Красной армии И.И. Раудметса
-  var building2 = new ymaps.Placemark([62.108479, 42.897450], {
+  var building2 = new ymaps.Placemark([62.108098, 42.898344], { // 62.108479, 42.897450
     balloonContentHeader: `
       <div>Архив (бывший дом воинского начальника)</div>
     `,
@@ -280,6 +280,9 @@ function init() {
     balloonContentHeader: `
       <div>Памятник Балтийским матросам</div>
     `,
+    balloonContentBody: `
+      <img src="images/pictures/baltiyskie_matrosy.jpg" width="300">
+    `,
     hintContent: 'Памятник Балтийским матросам'
   }, {
     iconLayout: "default#image",
@@ -290,9 +293,12 @@ function init() {
   map.geoObjects.add(monument5);
 
   // Памятник пограничникам
-  var monument6 = new ymaps.Placemark([62.101229, 42.898421], {
+  var monument6 = new ymaps.Placemark([62.100865, 42.898355], {
     balloonContentHeader: `
       <div>Памятник пограничникам</div>
+    `,
+    balloonContentBody: `
+      <img src="images/pictures/pogranichnikam.jpg" width="300">
     `,
     hintContent: 'Памятник пограничникам'
   }, {
