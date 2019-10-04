@@ -527,25 +527,25 @@ function init() {
   map.geoObjects.add(pharmacy3);
 
   // Фармация
-  var pharmacy4 = new ymaps.Placemark([62.107073, 42.902755], {
-    balloonContentHeader: `
-      <div>Аптека</div>
-    `,
-    balloonContentBody: `
-      <div>
-        <label class="label">Телефоны:</label>
-        <p><a href="tel:+78185141139">+7 (81851) 4-11-39</a></p>
-        <p><a href="tel:+78185141307">+7 (81851) 4-13-07</a></p>
-      </div>
-    `,
-    hintContent: 'Аптека'
-  }, {
-    iconLayout: "default#image",
-    iconImageHref: "images/icons/pharmacy.png",
-    iconImageSize: [30, 30],
-    iconImageOffset: [-15, -15]
-  });
-  map.geoObjects.add(pharmacy4);
+  // var pharmacy4 = new ymaps.Placemark([62.107073, 42.902755], {
+  //   balloonContentHeader: `
+  //     <div>Аптека</div>
+  //   `,
+  //   balloonContentBody: `
+  //     <div>
+  //       <label class="label">Телефоны:</label>
+  //       <p><a href="tel:+78185141139">+7 (81851) 4-11-39</a></p>
+  //       <p><a href="tel:+78185141307">+7 (81851) 4-13-07</a></p>
+  //     </div>
+  //   `,
+  //   hintContent: 'Аптека'
+  // }, {
+  //   iconLayout: "default#image",
+  //   iconImageHref: "images/icons/pharmacy.png",
+  //   iconImageSize: [30, 30],
+  //   iconImageOffset: [-15, -15]
+  // });
+  // map.geoObjects.add(pharmacy4);
 
   // Аюта
   var pharmacy5 = new ymaps.Placemark([62.105069, 42.902163], {
@@ -606,6 +606,26 @@ function init() {
   map.geoObjects.add(policeoffice1);
 
   // Полиция
+  var policeoffice2 = new ymaps.Placemark([62.107729, 42.899237], {
+    balloonContentHeader: `
+      <div>ГУВМ МВД</div>
+    `,
+    // balloonContentBody: `
+    //   <div>
+    //     <label class="label">Телефоны:</label>
+    //     <p><a href="tel:+78185141139">+7 (81851) 4-15-40</a></p>
+    //   </div>
+    // `,
+    hintContent: 'ГУВМ МВД'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "images/icons/police.png",
+    iconImageSize: [30, 30],
+    iconImageOffset: [-15, -15]
+  });
+  map.geoObjects.add(policeoffice2);
+
+  // Банк
   var bank1 = new ymaps.Placemark([62.104596, 42.902917], {
     balloonContentHeader: `
       <div>Банкомат Сбербанк</div>
